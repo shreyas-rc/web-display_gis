@@ -13,9 +13,9 @@ let isSwampsVisible = true;
 document.addEventListener('DOMContentLoaded', function() {
     initializeMap();
     loadShapefile();
-    loadGlobcover();
-    loadGLWD();
-    loadSWAMPs();
+    loadGlobcoverWeb();
+    loadGLWDWeb();
+    loadSWAMPsWeb();
     setupEventListeners();
 });
 
