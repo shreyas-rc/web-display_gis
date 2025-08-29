@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapefile Viewer with Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="map-container">
+        <div id="map"></div>
+        <div id="controls">
+            <button id="toggle-shapefile" class="control-button">
+                <span id="button-text">Hide Shapefile</span>
+            </button>
+            <button id="toggle-globcover" class="control-button">
+                <span id="globcover-text">Hide Globcover</span>
+            </button>
+            <button id="toggle-glwd" class="control-button">
+                <span id="glwd-text">Hide GLWD</span>
+            </button>
+            <button id="toggle-swamps" class="control-button">
+                <span id="swamps-text">Hide SWAMPs</span>
+            </button>
+            <div id="info-panel">
+                <h3>Map Layers</h3>
+                <p>• Administrative Boundaries</p>
+                <p>• Globcover Land Cover</p>
+                <p>• GLWD Lakes & Wetlands</p>
+                <p>• Tropical/Subtropical Wetlands</p>
+                <p id="feature-count">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/geotiff@2.0.7/dist-browser/geotiff.js"></script>
+    <script src="https://unpkg.com/plotty@0.4.10/src/plotty.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

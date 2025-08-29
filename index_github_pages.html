@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapefile Viewer - GitHub Pages Compatible</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="map-container">
+        <div id="map"></div>
+        <div id="controls">
+            <button id="toggle-shapefile" class="control-button">
+                <span id="button-text">Hide Boundaries</span>
+            </button>
+            <div class="info-message">
+                <h3>⚠️ GitHub Pages Notice</h3>
+                <p>TIFF files cannot be loaded directly on GitHub Pages due to browser security restrictions.</p>
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Convert TIFF to PNG format</li>
+                    <li>Use a tile server</li>
+                    <li>Host on a different platform</li>
+                </ul>
+            </div>
+            <div id="info-panel">
+                <h3>Available Layers</h3>
+                <p>✅ Administrative Boundaries (GeoJSON)</p>
+                <p>❌ Globcover (TIFF - needs conversion)</p>
+                <p>❌ GLWD (TIFF - needs conversion)</p>
+                <p>❌ SWAMPs (TIFF - needs conversion)</p>
+                <p id="feature-count">Ready to load...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script_github_pages.js"></script>
+</body>
+</html>
